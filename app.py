@@ -10,22 +10,18 @@ def main():
     filter = (df['Country/Region'] == 'Brazil') & (df['Confirmed'] > 4000)
     dfbrasil = df[filter].copy()
 
-    ax = st.subplots()
+    fig, ax = plt.subplots()
     day = dfbrasil['Date']
     confirmed = dfbrasil['Confirmed']
     ax.plot(day, confirmed)
     ax.set(xlabel='Dias Corridos', ylabel='Casos Confirmados', title='Casos de Corona Virús no Brasil')
     ax.grid()
-    ax.pyplot()
+    st.pyplot()
 
     if page == 'Homepage':
         st.title('Curva de Corona Virus Brasil')
         st.text('Implementing...')
         #st.dataframe(df)
-
-
-
-# this is a change
 
 
 if __name__ == '__main__':
