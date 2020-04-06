@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22af2c13-ab25-41e1-a069-6aa1de1e7aaa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coronavairusbrasil.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +40,31 @@
       <option name="presentableId" value="Default" />
       <updated>1586133375581</updated>
     </task>
+    <task id="LOCAL-00001" summary="h10">
+      <created>1586134088484</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586134088484</updated>
+    </task>
+    <task id="LOCAL-00002" summary="h10">
+      <created>1586134271789</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586134271789</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="h10" />
+    <option name="LAST_COMMIT_MESSAGE" value="h10" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1586134087616">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1586134270894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1366.-180.1366.728@0.0.1280.680" timestamp="1586134087616" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1366.-180.1366.728@0.0.1280.680" timestamp="1586134270894" />
   </component>
 </project>
