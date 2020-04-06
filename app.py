@@ -5,34 +5,30 @@ import matplotlib.pyplot as plt
 
 def main():
     df = load_data()
-    page = st.sidebar.selectbox("Choose a Country", ['Brazil', 'Italy'])
-    print(page)
+    page = st.sidebar.selectbox("Work In Progress", ['Homepage'])
 
-    if page == 'Brazil':
-        st.title('Casos Confirmados no Brasil')
-        st.text('Implementing...')
-        create_graph(df, 'Brazil')
-
-    elif page == 'Italy':
-        st.title('Casos confirmados na Itália')
-        st.text('Implementing...')
-        create_graph(df, 'Italy')
-
+    if page == 'Homepage':
+        country = st.selectbox("Choose a Country", df['Country/Region'].unique(), index=1)
+        create_graph(df, country)
 
 @st.cache
 def load_data():
     df = pd.read_csv('covid.csv')
+    df['Date'] = pd.to_datetime(df['Date'])
     return df
 
 
 def create_graph(df, country):
-    filter = (df['Country/Region'] == country) & (df['Confirmed'] > 4000)
-    dfbrasil = df[filter].copy()
+    st.title(f'Casos Confirmados no país: {country}')
+    st.text('Aumento do número de casos confirmados por dia')
+    st.text('Fonte: https://www.kaggle.com/imdevskp/corona-virus-report/data#')
+    filter = (df['Country/Region'] == country) & (df['Date'] > '03/30/2020')
+    dfcountry = df[filter].copy()
     fig, ax = plt.subplots()
-    day = dfbrasil['Date']
-    confirmed = dfbrasil['Confirmed']
+    day = dfcountry['Date']
+    confirmed = dfcountry['Confirmed']
     ax.plot(day, confirmed)
-    ax.set(xlabel='Dias Corridos', ylabel='Casos Confirmados', title=f'Casos de Corona Virús no {country}')
+    ax.set(xlabel='Dias Corridos', ylabel='Casos Confirmados')
     ax.grid()
     st.pyplot()
 

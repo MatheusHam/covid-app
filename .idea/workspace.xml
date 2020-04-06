@@ -4,6 +4,7 @@
     <list default="true" id="22af2c13-ab25-41e1-a069-6aa1de1e7aaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/covid.csv" beforeDir="false" afterPath="$PROJECT_DIR$/covid.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586134769607</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="h10">
+      <created>1586135963287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586135963287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -98,9 +106,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="h10" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1586134768780">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1586135962501">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1366.-180.1366.728@0.0.1280.680" timestamp="1586134768780" />
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1366.-180.1366.728@0.0.1280.680" timestamp="1586135962501" />
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1586175140796">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680/-1366.-180.1366.728@0.0.1280.680" timestamp="1586175140796" />
   </component>
 </project>
