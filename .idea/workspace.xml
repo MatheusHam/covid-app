@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586362178667</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Multiple countries">
+      <created>1586362415291</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586362415291</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -135,11 +142,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Multiple countries" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2237" y="0" key="CommitChangelistDialog2" timestamp="1586362177756">
+    <state x="2237" y="0" key="CommitChangelistDialog2" timestamp="1586362414107">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1366.-180.1366.728@0.0.1280.680" timestamp="1586180700797" />
-    <state x="2237" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1366.728@1920.0.1366.728" timestamp="1586362177756" />
+    <state x="2237" y="0" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1366.728@1920.0.1366.728" timestamp="1586362414107" />
     <state x="2369" y="104" key="FileChooserDialogImpl" timestamp="1586349449153">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>

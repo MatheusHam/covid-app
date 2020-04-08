@@ -10,11 +10,11 @@ def main():
                  st.sidebar.selectbox("Country - 2", df['Country/Region'].unique(), index=138),
                  st.sidebar.selectbox("Country - 3", df['Country/Region'].unique(), index=156)]
     st.sidebar.text('\n \n \n \n')
-    st.sidebar.text('Fonte: https://www.kaggle.com/\nimdevskp/corona-virus-report/data#')
+    st.sidebar.markdown('Fonte: [Kaggle](https://www.kaggle.com/imdevskp/corona-virus-report/data#)')
     st.sidebar.text('Dados atualizados em 08/04/2020')
 
     if page == 'Evolução dos casos':
-        st.title('Evolução dos casos confirmados de COVID-19')
+        st.title('Evolução dos casos de COVID-19')
         st.text('Comparação dos casos confirmados a partir do primeiro registrado.')
 
         create_graph(df, countries)
@@ -44,7 +44,7 @@ def create_graph(df, countries):
         ax.plot(day_c, confirmed_c, color=color_text, label=f'{country}')
 
     ax.legend()
-    ax.set(xlabel='Dias Corridos', ylabel='Casos Confirmados', title='Evolução de casos')
+    ax.set(xlabel='Dias Corridos', ylabel='Casos Confirmados')
     ax.grid()
     ax.set_yscale('log')
 
