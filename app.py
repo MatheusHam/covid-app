@@ -6,15 +6,17 @@ import matplotlib.pyplot as plt
 def main():
     df = load_data()
     page = st.sidebar.selectbox("Visualizações", ['Evolução dos casos'])
+    countries = [st.sidebar.selectbox("Country - 1", df['Country/Region'].unique(), index=21),
+                 st.sidebar.selectbox("Country - 2", df['Country/Region'].unique(), index=138),
+                 st.sidebar.selectbox("Country - 3", df['Country/Region'].unique(), index=156)]
+    st.sidebar.text('\n \n \n \n')
+    st.sidebar.text('Fonte: https://www.kaggle.com/\nimdevskp/corona-virus-report/data#')
+    st.sidebar.text('Dados atualizados em 08/04/2020')
 
     if page == 'Evolução dos casos':
-        st.title('')
-        st.text('Compare o aumento de casos em relação a outros paises a partir\n do primeiro caso confirmado.')
-        st.text('Fonte: https://www.kaggle.com/imdevskp/corona-virus-report/data#')
-        st.text('Dados atualizados em 08/04/2020')
-        countries = [st.selectbox("Country - 1", df['Country/Region'].unique(), index=21),
-                     st.selectbox("Country - 2", df['Country/Region'].unique(), index=138),
-                     st.selectbox("Country - 3", df['Country/Region'].unique(), index=156)]
+        st.title('Evolução dos casos confirmados de COVID-19')
+        st.text('Comparação dos casos confirmados a partir do primeiro registrado.')
+
         create_graph(df, countries)
 
 
