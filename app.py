@@ -6,7 +6,7 @@ from tkinter import filedialog
 
 def main():
     df = load_data()
-    st.sidebar.image('craft logo.png')
+    st.sidebar.markdown("[Repositório]('https://github.com/PresHam/covid-app')")
     page = st.sidebar.selectbox("Visualizações", ['Evolução dos casos'])
     countries = [st.sidebar.selectbox("Country - 1", df['Country/Region'].unique(), index=21),
                  st.sidebar.selectbox("Country - 2", df['Country/Region'].unique(), index=138),
@@ -14,7 +14,6 @@ def main():
     st.sidebar.text('\n \n \n \n')
     st.sidebar.markdown('Fonte: [Kaggle](https://www.kaggle.com/imdevskp/corona-virus-report/data#)')
     st.sidebar.text('Dados atualizados em 08/04/2020')
-    filepath = filedialog.askopenfilename()
     if page == 'Evolução dos casos':
         st.title('Evolução dos casos de COVID-19')
         st.text('Comparação dos casos confirmados a partir do primeiro registrado.')
