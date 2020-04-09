@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 
 def main():
     df = load_data()
+    st.sidebar.image('craft logo.png')
     page = st.sidebar.selectbox("Visualizações", ['Evolução dos casos'])
     countries = [st.sidebar.selectbox("Country - 1", df['Country/Region'].unique(), index=21),
                  st.sidebar.selectbox("Country - 2", df['Country/Region'].unique(), index=138),
@@ -49,6 +50,8 @@ def create_graph(df, countries):
     ax.set_yscale('log')
 
     st.pyplot()
+
+
 
 
 if __name__ == '__main__':
