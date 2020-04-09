@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+from tkinter import filedialog
 
 
 def main():
@@ -13,7 +14,7 @@ def main():
     st.sidebar.text('\n \n \n \n')
     st.sidebar.markdown('Fonte: [Kaggle](https://www.kaggle.com/imdevskp/corona-virus-report/data#)')
     st.sidebar.text('Dados atualizados em 08/04/2020')
-
+    filepath = filedialog.askopenfilename()
     if page == 'Evolução dos casos':
         st.title('Evolução dos casos de COVID-19')
         st.text('Comparação dos casos confirmados a partir do primeiro registrado.')
@@ -48,7 +49,7 @@ def create_graph(df, countries):
     ax.set(xlabel='Dias Corridos', ylabel='Casos Confirmados')
     ax.grid()
     ax.set_yscale('log')
-
+    st.warning('Be safe, stay home.')
     st.pyplot()
 
 
