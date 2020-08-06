@@ -22,7 +22,7 @@ def main():
 
 @st.cache
 def load_data():
-    df = pd.read_csv('covid.csv')
+    df = pd.read_csv('covid_data.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     return df
 
